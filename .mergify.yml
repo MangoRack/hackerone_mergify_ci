@@ -1,0 +1,17 @@
+﻿merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: false
+
+merge_protections:
+  - name: Docs scope requires docs-tests
+    if:
+      - base = main
+      - scope = docs
+    success_conditions:
+      - check-success = docs-tests
+  - name: API scope requires api-tests
+    if:
+      - base = main
+      - scope = api
+    success_conditions:
+      - check-success = api-tests
