@@ -1,0 +1,2 @@
+﻿Harmless API-path file change for authorized Mergify scope impact testing. h1-impact-b43da7a0
+
